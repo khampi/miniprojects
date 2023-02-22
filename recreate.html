@@ -1,0 +1,121 @@
+=========================
+HTML
+=========================
+
+
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <ul>
+  <li><a class="active" href="#home">PURE</a></li>
+  <li><a href="#news">Get Started</a></li>
+  <li><a href="#contact">Layouts</a></li>
+  <li><a href="#about">Base</a></li>
+      <li><a href="#about">Grids</a></li>
+      <li><a href="#about">Forms</a></li>
+      <li><a href="#about">Buttons</a></li>
+</ul>
+   
+    <h1 class="h1">Pure.CSS</h1>
+    <h4 class="h4">A set of small, responsive CSS modules that you can use in<br> 
+      every web project.</h4>
+    
+    <button class="one"><a href="https://purecss.io/start/">Get Started</a></button>
+    <button class="two"><a href="https://github.com/pure-css/pure/">View on GitHub</a></button>
+  </body>
+</html>
+
+=======================
+CSS
+=======================
+
+.h1{
+  font-size:50px;
+  margin-left:25%;
+  text-align:center;
+  color:red
+}
+.h4{
+  margin-left:25%;
+  font-size:20px;
+  text-align:center;
+ font-family: serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: lightblue;
+  color: white;
+}
+
+li a:hover:not(.active) {
+ 
+ background-color: pink;
+  
+}
+.one{
+  margin-left:55%;
+  border-radius: 12px;
+   transition-duration: 0.4s;
+  width:100px;
+  height:30px;
+  
+  color:black;
+  
+}
+.two{
+  border-radius: 12px;
+   transition-duration: 0.4s;
+   width:120px;
+  height:30px;
+}
+.one:hover{
+  background-color: lightblue; /* Green */
+  color: white;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.two:hover{
+  background-color: lightblue; /* Green */
+  color: white;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+a:link {
+ 
+ 
+  text-decoration: none;
+}
+a:visited {
+  
+ 
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  
+ 
+}
+a:active {
+  color: yellow;
+  
+  
+}
+    
