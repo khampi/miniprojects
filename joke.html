@@ -1,0 +1,67 @@
+=====================
+html
+========================
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta nae="viewport" content="width=device-width,initial-scale=1">                            <title>joke generator</title>           <body>
+    <h1>Let's have some Fun</h1>
+    <button id="one">Start</button><br>
+    <img src="https://mystickermania.com/cdn/stickers/cartoons/sticker_2957-512x512.png">
+    <br><center>
+    <a href="https://www.w3schools.com/css/default.asp">code your own joke generator</a>
+    </head>
+    </html>
+    
+    
+    ==============================
+    CSS
+    ==============================
+    
+    
+    body{
+  text-align:center;
+ background-image: linear-gradient(120deg, teal, tan, cyan);
+  
+  
+}
+#one{
+  width:60px;
+  height:30px;
+  font-size:20px;
+  border-radius:120px;
+  background-color:lightyellow;
+  
+}
+#one:hover{
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+h1{
+  color:white;
+}
+    
+    
+  =============================
+    Java script
+  ==============================
+    
+    
+    const button=document.getElementById("one");
+const jokeContent=document.getElementById("jokeContent");
+const joke=documnet.getElementById("joke");
+button.onclick=() => {
+  axios.get('https://official-joke-api.appsot.com/random_joke')
+  .then(function(response){
+    button.textContent="Next";
+    jokeContent.textContent=response.data.setup;
+    joke.textContent="";
+    setTimeout(function(){
+      joke.textContent=respomse.data.punchline;
+    },1000);
+  })
+  .catch(function(error){
+    console.log(error);
+  });
+}
+
